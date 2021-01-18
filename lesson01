@@ -1,0 +1,18 @@
+from math import factorial
+def combinations(n, k):
+    return int(factorial(n) / (factorial(k) * factorial(n - k)))
+
+f1 = combinations(52,4)
+print('вариантов в 4 карты из колоды 52 карты', f1)
+# вариантов в 4 карты из колоды 52 карты 270725
+
+f2 = combinations(10,3)
+print('открыть кодовый замок код 3 из 10 цифр с первой попытки', 1/f2)
+# 0.008333333333333333 1/120
+
+
+
+f4 = combinations(100,2)
+print('лотерея 2 выигрышных из 100 билетов', 1/f4)
+# 0.00020202020202020202  1/4950
+
